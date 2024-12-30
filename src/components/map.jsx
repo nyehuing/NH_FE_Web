@@ -2,7 +2,7 @@ import '../styles/Map.css'; // CSS 파일 경로
 import PropTypes from "prop-types";
 
 export default function Map({ data }) {
-    const number = data || [
+    const number =  data || [
         {id:1, status:false, jang:false, king:false, Eg:false, small:false},
         {id:2, status:false, jang:false, king:false, Eg:false, small:false},
         {id:3, status:false, jang:false, king:false, Eg:false, small:false},

@@ -27,7 +27,7 @@ export default function MainPage() {
 
     const search = async () => {
         try {
-            const response = await axios.get(`http://${ip}/api/witch?carNumber=${carNum}`);
+            const response = await axios.get(`https://${ip}/api/witch?carNumber=${carNum}`);
             setSelectNum(response.data.parkingWitch);
             setCarNumConst(carNum);
         } catch (error) {
@@ -36,9 +36,8 @@ export default function MainPage() {
     };
 
     const getData = async () => {
-        setIsLoading(true); // Set loading to true when fetching data
         try {
-            const response = await axios.get(`http://${ip}/api/show`);
+            const response = await axios.get(`https://${ip}/api/show`);
             if (response.status === 200) setData(response.data);
             else console.error(response.status);
         } catch (error) {
@@ -67,7 +66,7 @@ export default function MainPage() {
     return (
         <div>
             {isModalVisible && (
-                <div className="dark-overlay" onClick={modalToggle}>
+                <div className="dark-overlay container" onClick={modalToggle}>
                     <div className="modal-content" onClick={(e) => e.stopPropagation()} style={{ height: selectNum ? '280px' : '230px' }}>
                         <h2 className="modal-title">차량 검색하기</h2>
                         <input

@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 export const IPContext = createContext();
 
 export const IPProvider  = ({children}) => {
-    const [ip, setIP] = useState('10.150.150.105:3000');
+    const [ip, setIP] = useState('nh-7d9d.onrender.com');
     return(
         <IPContext.Provider value={{ ip, setIP }} >
             {children}
