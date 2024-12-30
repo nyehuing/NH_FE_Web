@@ -1,0 +1,58 @@
+.FooterBox {
+    width: 140px;
+    position: absolute;
+    top: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.selectText {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.footertext {
+    font-size: 16px;
+    font-weight: 600;
+    color: #F6C227;
+}
+
+.selectButton {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6C227;
+    padding: 5px 18px; /* padding: 5px 18px;로 간소화 */
+    border-radius: 20px;
+    border: none; /* button 요소의 기본 border 제거 */
+    cursor: pointer; /* 커서를 포인터로 변경 */
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 5px 18px; /* padding: 5px 18px;로 간소화 */
+    border-radius: 20px;
+    border: 2px solid #F6C227;
+    cursor: pointer; /* 커서를 포인터로 변경 */
+    width: 40%;
+    color: white;
+}
+
+.button:hover {
+    background-color: white; /* 호버 시 효과 추가 */
+    color: #F6C227; /* 호버 시 텍스트 색상 변경 */
+}
+
+.selectButton:hover {
+    background-color: #F6C227; /* 선택된 버튼의 호버 색상 */
+    color: white;
+}

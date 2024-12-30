@@ -1,0 +1,49 @@
+.Map2container {
+    position: absolute;
+    width: 90%;
+    height: 600px;
+    padding: 10px;
+    top: 200px;
+    left: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.text {
+    font-size: 16px;
+    text-align: center;
+    color: white; /* 텍스트 기본 색상 */
+}
+
+.garo {
+    background-color: #53F657;
+    width: 70px;
+    padding: 5px 0;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Block {
+    display: flex;
+    flex-direction: column;
+}
+
+.auditorium {
+    width: 100px;
+    background-color: #858585;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.src {
+    width: 100px;
+    background-color: #858585;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

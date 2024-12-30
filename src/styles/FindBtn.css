@@ -1,0 +1,19 @@
+.FindBtnBox {
+    background-color: #F6C227;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    margin: 0 auto;
+}
+
+.BtnText {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 4px;
+}

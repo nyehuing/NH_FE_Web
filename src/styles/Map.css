@@ -1,0 +1,93 @@
+.container {
+    width: 90%;
+    height: 600px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.schoolMain {
+    position: absolute;
+    top: 0;
+    background-color: #858585;
+    width: 340px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SText {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    width: 61px;
+}
+
+.text {
+    font-size: 16px;
+    text-align: center;
+}
+
+.garo {
+    background-color: #53F657;
+    width: 70px;
+    padding: 5px 0;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sero {
+    background-color: #53F657;
+    height: 70px;
+    padding: 0 10px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oneBlock {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.twoBlock {
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.threeBlock {
+    position: absolute;
+    top: 80px;
+    left: 170px;
+    display: flex;
+    flex-direction: column;
+}
+
+.forBlock {
+    position: absolute;
+    top: 80px;
+    left: 270px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fiveBlock {
+    position: absolute;
+    top: 460px;
+    left: 30px;
+    display: flex;
+    flex-direction: row;
+}
