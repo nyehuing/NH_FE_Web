@@ -5,6 +5,7 @@ import FindBtn from './components/findBtn.jsx';
 import Map from './components/map.jsx';
 import { IPContext } from './context.jsx';
 import Map2 from './components/map2.jsx';
+import Logo from './assets/logo.svg';
 import './styles/MainPage.css';
 
 export default function MainPage() {
@@ -13,7 +14,7 @@ export default function MainPage() {
     const [carNumConst, setCarNumConst] = useState();
     const [selectNum, setSelectNum] = useState(null);
     const [data, setData] = useState({ parking: [] });
-    const [isLoading, setIsLoading] = useState(false); // Set initial loading state to true
+    const [isLoading, setIsLoading] = useState(true); // Set initial loading state to true
     const { ip } = useContext(IPContext);
     const [isFront, setIsFront] = useState(true);
 
@@ -36,6 +37,7 @@ export default function MainPage() {
     };
 
     const getData = async () => {
+        setIsLoading(true);
         try {
             const response = await axios.get(`https://${ip}/api/show`);
             if (response.status === 200) setData(response.data);
@@ -56,7 +58,7 @@ export default function MainPage() {
         return (
             <div className="container-loading">
                 <div className="mega-box">
-                    <img src="./assets/logo.png" alt="Logo" />
+                    <img src={Logo} alt="Logo" width={200} />
                     <p className="loading-text">자동차 주차 공간 확인할땐?</p>
                 </div>
             </div>

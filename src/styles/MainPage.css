@@ -5,15 +5,17 @@
     justify-content: center;
     align-items: center;
     background-color: #f6c227;
-    flex: 1;
+    width: 98vw;
+    height: 98vh;
     position: relative;
+    margin: 0;
 }
 
 .mega-box {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1;
+    flex-direction: column;
 }
 
 .loading-text {
